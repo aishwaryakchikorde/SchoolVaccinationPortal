@@ -1,0 +1,4 @@
+name,grade,dob,studentId,vaccinationStatus
+John Doe,5,2012-04-15,STD001,false
+Jane Smith,6,2011-09-22,STD002,true
+Ravi Kumar,7,2010-01-10,STD003,false

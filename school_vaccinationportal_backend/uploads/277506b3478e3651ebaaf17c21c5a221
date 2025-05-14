@@ -1,0 +1,4 @@
+name,class,studentId,vaccinationStatus
+John Doe,5,STD001,false
+Jane Smith,6,STD002,true
+Ravi Kumar,7,STD003,false
