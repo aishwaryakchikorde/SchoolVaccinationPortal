@@ -1,0 +1,33 @@
+.page-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.drive-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.drive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.drive-card h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.drive-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-outline-primary {
+  display: flex;
+  align-items: center;
+}
