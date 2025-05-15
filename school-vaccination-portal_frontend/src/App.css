@@ -1,0 +1,235 @@
+/* ==== Global Styles ==== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* ==== Navigation Bar ==== */
+nav {
+  background: linear-gradient(90deg, #2980b9, #3498db);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* ==== Container ==== */
+.container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==== Cards ==== */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* ==== Buttons ==== */
+button, .btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover, .btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* ==== Inputs & Selects ==== */
+input[type="text"], input[type="password"], input[type="file"], select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* ==== Table Styling ==== */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+table th {
+  background-color: #2980b9;
+  color: white;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #ecf6fd;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* ==== Filter Section ==== */
+.filter-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* ==== Heading Styles ==== */
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  border-left: 6px solid #2980b9;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+/* ==== Animations ==== */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ==== Transition for Everything ==== */
+button, input, select, a, table tr {
+  transition: all 0.3s ease;
+}
+
+/* ==== Responsive Adjustments ==== */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  input[type="text"], input[type="password"], input[type="file"], select {
+    width: 100%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+nav {
+  background-color: #2980b9;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-actions button {
+  background-color: #e74c3c;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-actions button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #2980b9 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #2c3e50 !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  color: #2980b9 !important;
+}
+
+.btn-danger {
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+}
